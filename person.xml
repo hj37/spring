@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	
+	<!--  PersonServiceImpl클래스에 대한 빈(객체)를 생성 설정 코드 -->
+	<!-- <bean id="personService1" 
+		class="com.spring.ex01.PersonServiceImpl">
+		
+		setter 메소드 호출하는 태그
+			PersonServiceImpl객체의 setName(String name)메소드 호출시 
+			홍길동을 매개변수로 전달하여 name변수에 저장 
+		
+		
+		<property name="name">
+			<value>홍길동</value>
+		</property>
+		
+		<property name="age">
+			<value>24</value>
+		</property>
+	
+	
+	
+	</bean>
+ -->
+ 	<bean id="personService1" class="com.spring.ex02.PersonServiceImpl">
+ 		<constructor-arg value="이순신"/>
+ 	</bean>
+ 
+ 	<bean id="personService2" class="com.spring.ex02.PersonServiceImpl">
+ 		<constructor-arg value="손흥민"/>
+
+ 		<constructor-arg value="23"/>
+ 	</bean>
+ 
+
+</beans>
